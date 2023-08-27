@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-link = "https://www.avito.ru/moskva/odezhda_obuv_aksessuary/beysbolka_new_era_mlb_colorado_rockies_white_7_12_3235274880"
+link = input("Введите полную ссылку на объявление")
 # инкогнито, чтобы выполнить тест для неавторизованного пользователя
 options = webdriver.ChromeOptions()
 options.add_argument("--incognito")
