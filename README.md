@@ -30,7 +30,7 @@ pip install selenium==4.*
 ```
 git clone https://github.com/alex383rynda/avito_favorites_test
 ```
-- Перейти в папку с тестом и зпустить его
+- Перейти в папку с тестом и запустить его
 ```
 cd avito_favorites_test
 
