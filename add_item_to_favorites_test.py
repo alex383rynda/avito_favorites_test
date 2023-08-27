@@ -33,5 +33,6 @@ try:
     is_item_in_favorites_in_favorites_page = WebDriverWait(browser, 1).until(EC.visibility_of_element_located((
         By.CSS_SELECTOR, ".styles-module-root-hwVld")))
     assert item_name in browser.page_source, "Айтем не добавился в избранное(на странице избранных айтемов)"
+    print("Объявление успешно добавлено в избранные")
 finally:
     browser.quit()
