@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-link = input("Введите полную ссылку на объявление: ")
+link = "https://www.avito.ru/nikel/knigi_i_zhurnaly/domain-driven_design_distilled_vaughn_vernon_2639542363"
 # инкогнито, чтобы выполнить тест для неавторизованного пользователя
 options = webdriver.ChromeOptions()
 options.add_argument("--incognito")
