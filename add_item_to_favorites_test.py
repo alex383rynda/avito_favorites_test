@@ -20,11 +20,9 @@ try:
         By.CSS_SELECTOR, "div.style-header-add-favorite-M7nA2>button.desktop-usq1f1")
     add_to_favorite_button.click()
 
-    # перед тем как перейти в избранное, проверяем, что айтем добавлен (находясь на странице айтема)
+    # ждём, пока айтем добавится в избранное(иконка сердчека, в избранном) на странице айтема
     is_item_in_favorites_in_item_page = WebDriverWait(browser, 1).until(EC.visibility_of_element_located((
         By.CSS_SELECTOR, "div[class=style-header-add-favorite-M7nA2]>button[data-is-favorite=true]")))
-    # ещё раз убеждаемся, что айтем в избранном (находясь на странице айтема)
-    assert "В избранном" in browser.page_source, "Айтем не добавился в избранное(на странице айтема)"
 
     # переходим в избранное
     go_to_favorites_button = browser.find_element(By.CSS_SELECTOR, "div.desktop-1rdftp2")
